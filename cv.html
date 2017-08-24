@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+    <title>Alin/CV</title>
+
+    <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/BPreplay:400,700">
+
+    <style>
+        body {
+            background: #EEEEEE;
+            font-family: 'BPreplay', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 40px 0;
+            color: #333;
+        }
+        em {
+            color: #999;
+        }
+        p {
+            line-height: 1.4;
+        }
+        ul {
+            margin-bottom: 0;
+        }
+        li {
+            margin-bottom: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: #069;
+            word-wrap: break-word;
+            border: 0;
+        }
+        a:hover {
+            border-bottom: 1px solid #069;
+        }
+        #resume {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 80px 100px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 4px #aaa;
+            -webkit-box-shadow: 2px 2px 4px #aaa;
+        }
+        #avatarBlock {
+            width: 150px;
+            max-height: 100px;
+            float: left;
+        }
+        #infoBlock {
+            margin-left: 151px;
+            min-height: 110px;
+        }
+        .largeFont {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .smallFont {
+            font-size: 12px;
+        }
+        .alias {
+            font-size: 14px;
+        }
+        .sectionName {
+            width: 150px;
+            vertical-align: top;
+            display: block;
+            position: absolute;
+            margin-bottom: 10px;
+        }
+        .sectionContent {
+            width: auto;
+            margin-left: 151px;
+            vertical-align: top;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .sectionContent ul {
+            padding-left: 20px;
+            margin-top: 6px;
+            list-style-type: circle;
+        }
+        .sectionContent .title {
+            font-weight: bold;
+        }
+        .sectionContent .date {
+            float: right;
+            background: #eee;
+            padding: 2px 5px;
+            color: #666;
+            margin-left: 10px;
+            font-size: 13px;
+        }
+        .sectionContent .separator {
+            height: 14px;
+        }
+        .sectionLine {
+            border-style: dashed;
+            border-width: 1px;
+            border-color: #CFCFCF;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .divider {
+            font-weight: bold;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .skillBlock {
+            margin-bottom: 4px;
+            display: block;
+        }
+        .cert li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .print-download {
+            float: right;
+        }
+        .current {
+            background: #27ae60;
+            color: #fff;
+            padding: 2px 5px;
+            margin-left: 10px;
+        }
+        .colophon {
+            margin-top: 50px;
+            color: #999;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+        }
+        .colophon-mark {
+            width: 30px;
+            border-top: 1px solid #999;
+            margin-bottom: 5px;
+            display: block;
+        }
+        /* Media Queries */
+        @media only screen and (max-width: 40em) {
+            body {
+                margin: 0;
+                font-size: 14px;
+            }
+            #resume {
+                margin: 0 auto;
+                max-width: 800px;
+                padding: 0.5em 1em;
+                border: none;
+            }
+            .sectionContent {
+                width: auto;
+                margin-left: 0;
+            }
+            .sectionName {
+                width: auto;
+                position: relative;
+                text-align: center;
+            }
+            .largeFont {
+                font-size: 20px;
+            }
+            .smallFont {
+                font-size: 14px;
+            }
+            #avatarBlock {
+                float: none;
+                display: block;
+                text-align: center;
+                width: auto;
+                margin-bottom: 5px;
+            }
+            #infoBlock {
+                margin-left: 0;
+                text-align: center;
+            }
+            .print-download {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            .github-corner {
+                display: none;
+            }
+            .print-download {
+                float: none;
+                display: block;
+            }
+        }
+        @media print {
+            #resume {
+                margin: 0 auto;
+                max-width: 800px;
+                padding: 0px 0px;
+                border: 0px;
+                background: #fff;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                font-size: 12px;
+            }
+            .print-download {
+                display: none;
+            }
+            em,
+            i {
+                color: #666;
+            }
+            .current {
+                color: #27ae60;
+            }
+            .current::before {
+                content: "[";
+            }
+            .current::after {
+                content: "]";
+            }
+            .github-corner {
+                display: none;
+            }
+            .sectionName,
+            #avatarBlock {
+                width: 99px;
+            }
+            .sectionContent,
+            #infoBlock {
+                margin-left: 100px;
+            }
+            .avatarPhoto {
+                width: 80px;
+            }
+        }
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="https://github.com/alinmechenici" class="github-corner">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+<!-- - -->
+    <div id="resume">
+        <div id="avatarBlock">
+          <a href="http://alin.mechenici.com/about">  <img src="/images/alin.jpg" alt="Alin Mechenici" class="avatarPhoto" width="40%"/> </a>
+        </div>
+        <div id="infoBlock">
+            <div class="print-download"><a href="javascript:window.print()">Print</a> &middot; <a href="https://highwaybusiness.box.com/s/7u2qzyirj7th3hjkielbt9i5fvvfkvr6">Download PDF</a></div>
+            <div id="nameBlock" class="largeFont">
+                <span class="name">Alin</span>
+                <em><a href="http://www.mechenici.com">MECHENICI</a></em>
+            </div>
+            <div id="basicsBlock" class="smallFont">
+                <div class="contactBlock">
+                    <div class="alias">   
+                    <span class="divider"></span>
+                    <span class="birthdate">'85 </span>
+                    <span class="divider">|</span>
+                    <span class="address">Linköping, Sweden </span>
+                    </div>
+                    <span class="email"> <a href="mailto:alinmechenici@protonmail.com"> email </a></span>
+                    <span class="divider">|</span>
+                    <span class="telegram"> <a href="https://telegram.me/alinmechenici"> telegram </a></span>
+                    <span class="divider">|</span>
+                    <a href="skype:alin.mechenici?call">skype</a>
+   
+                    
+                    <span class="divider">|</span>
+                    <span class="phone">(+46) 0700 620 334</span>
+                    
+                </div>
+                <div id="profilesBlock">
+                    <span class="url"><a href="http://alin.mechenici.com">blog</a></span>
+                    <span class="divider">|</span>
+                    <span class="url"><a href="http://alin.mechenici.com/about">about</a></span>
+                    <span class="divider">|</span>
+                    <span class="url"><a href="http://alin.mechenici.com/now/">#NOW</a></span>
+
+                    <span class="divider">|</span>
+                    <span class="url"><a href="http://angel.co/alinmechenici">angel</a></span>
+                      <span class="divider">|</span>
+                    <span class="url"><a href="https://linkedin.com/in/alinmechenici">linkedIn</a></span>
+                    <span class="divider">|</span>
+                    <span class="url"><a href="https://twitter.com/alinmechenici">twitter</a></span>
+
+                </div>
+            </div>
+        </div>
+        <!-- /#infoBlock -->
+
+        <div class="sectionLine"></div>
+
+        <div id="summaryBlock">
+            <div class="sectionName">
+                <span>SUMMARY</span>
+            </div>
+            <div class="sectionContent">
+				<p>
+					A full-stack junior web-developer with heavy startups skills. In love with Debian and Emacs. Python automation and security enthusiast.
+				</p>
+               <!-- <p>An e-PR specialist, project manager, trainer and entrepreneur with passion.</p>
+                <p>Currently I'm working as a UX/UI designer full stack freelance web developer and I am searching for exciting challenges.</p>
+				-->
+
+            </div>
+        </div>
+        <!-- /#summaryBlock -->
+
+        <div class="sectionLine"></div>
+
+        <div id="workBlock">
+            <div class="sectionName">
+                <span>EXPERIENCE</span>
+            </div>
+            <div class="sectionContent">
+                <div class="blockHeader">
+                    <span class="title">Founder, Business and IT Consultant</span>
+                   <!-- <span class="current">Current</span> -->
+                    <span class="date">Jan 2013 - April 2017 </span>
+                    <div class="company">Highway to Business (sole trader)
+                       <!-- <br><a href="http://www.highway.business">http://www.highway.business</a>-->
+					   </div>
+                </div>
+                <ul class="highlights">
+
+                    <li>Web apps development for clients and personal projects with JS, HTML5, CSS3, PHP and Python.</li>
+					<li>Co-organising NASA hackathon - <a href="https://twitter.com/hashtag/spaceappschallenge">#SpaceAppsChallenge</a>  Sweden - in <a href="https://2016.spaceappschallenge.org/locations/linkoping-sweden">2016</a> and <a href="https://2017.spaceappschallenge.org/locations/linkoping"> 2017</a>, marketing & <a href="http://48h.space/"> web-development </a></li>
+                    <li>Hackathon mentoring - Megahack, TechFest Transilvania 2016</li>
+                    <li>Speaker at different conferences and events (<a href="http://techfest.ro/festival-events/techtalks/">Techfest</a>, <a href="http://tv.businessdays.ro/vorbitor/alin-mechenici/">Business Days</a>, <a href="http://www.afaceri.ro/speaker/alin-mechenici/">Afaceri.ro</a>, LiU meetings, JCI, etc)</li>
+                    <li>Serve as a subject matter expert. Interviews in newspapers, TV and radio (Romania & Sweden). Hosting my own podcast on: <a href="https://itunes.apple.com/us/podcast/on-highway-business-podcast/id1052928779?mt=2">itunes</a>, <a href="http://tunein.com/radio/ON-Highway-Business-podcast-p805369/" /> tunein </a>, <a href="http://soundcloud.com/alinmechenici"/> soundcloud</a>
+
+                    </li>
+                    <li>UX/UI: Translate functional requirements into a coherent and engaging design that meets user and business needs.
+                    Create design deliverables such as: web-design elements, specifications, process flows, personas, conceptual diagrams, user journey, wireframes, and mock-ups, prototypes.
+                    </li>
+                    <li>Develop software plans, procedures, documentation and maintain functionality.</li>
+					<li>Consultancy, technical support and training to clients </li>
+                    <li>Update job knowledge by studying state-of-the-art development tools, programming techniques; participating in educational opportunities; reading professional books and publications and maintaining personal networks.</li>
+                </ul>
+            </div>
+            <div class="sectionContent">
+                <div class="blockHeader">
+                    <span class="title">Business consultant & CSR Expert</span>
+                    <span class="date">Jan 2011 - December 2013</span>
+                    <div class="company">Mechenici & Partners (sole trader)
+                        <br><a href=""> </a></div>
+                </div>
+                <ul class="highlights">
+                    <li>Project manager - "The Management of Communities" - a CSR project made by JCI Craiova, PR Patrat and Heineken Romania </li>
+                    <li>Corporate Social Responsability Expert @ <a href="http://actionamresponsabil.ro">AR</a></li>
+                    <li>Mentoring 15 startups </li>
+                    <li>B2B Communication consultant & trainer</li>
+                    <li>Founder & president - <a href="http://www.jcicraiova.ro/"> JCI Craiova</a> (Volunteering, NGO)</li>
+
+                </ul>
+
+            </div>
+            <div class="sectionContent">
+                <div class="blockHeader">
+                    <span class="title">PR & Project manager</span>
+                    <span class="date">June 2006 - Jan 2011</span>
+                    <div class="company">
+                        <br><a href=" "></a></div>
+                </div>
+
+
+                <strong>
+                  <em> Online PR Expert  </em>
+                </strong> <a href="http://www.impactsa.ro"> Impact SA</a> (RealEstate Contractor & Developer)
+                <li style="list-style-type:none">
+                    <ul>
+                        <li>Online strategy and implementation</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+
+                <strong>
+              <em>PR Expert  </em>
+            </strong> <a href="http://www.gds.ro"> Gazeta de Sud</a> (Romania's biggest regional newspaper)
+
+              </li>
+              <li style="list-style-type:none">
+                <ul>
+                  <li>Monitoring the direct & indirect competition</li>
+                  <li>Organizing internal and external events</li>
+                  <li>Implementing technical solutions for internal use </li>
+                  <li> Corporate blogging </li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <strong>
+              <em>Founder & President</em>
+            </strong> - PR Patrat (Volunteering, NGO)
+        <li style="list-style-type:none">
+            <ul>
+                <li>Organizing meetups like "PR Club", "bloggers meeting",
+                 "GeekMeet"" (for programmers) and "OpenCoffee"" (for IT project managers) and B2B conferences</li>
+                <li>Design, video and photo editing </li>
+                <li>PR trainings & consultancy for several NGOs </li>
+            </ul>
+        </li>
+        <br>
+
+                <ul class="highlights">
+
+          </div>
+
+
+
+
+        <div class="sectionLine"></div>
+
+        <div id="certifications">
+            <div class="sectionName">
+
+                <span>CERTIFICATIONS</span>
+            </div>
+            <div class="sectionContent">
+              <div class="blockHeader">
+                  <span class="title">Train the trainers</span>
+                <!--  <div class="author">European License</div> -->
+              </div>
+              <ul class="highlights cert">
+                  <li>
+                      <span class="date">December 2011</span>European licence (VET/CNFPA)</li>
+              </ul>
+          </div>
+          <div class="sectionContent">
+
+                <div class="blockHeader">
+                    <span class="title">CSR Manager</span>
+                 <!--   <div class="author">European license: 00066178</div>-->
+                </div>
+                <ul class="highlights cert">
+                    <li>
+                        <span class="date">August 2013</span>European licence (VET/CNFPA)
+					</li>
+					<li>
+                        <span class="date">May 2013</span> Social Entrepreneurship in Tuscany, Italy
+                    </li>
+
+                </ul>
+            </div>
+			
+        </div>
+        <!-- /#certifications -->
+
+        <div class="sectionLine"></div>
+
+        <div id="education">
+            <div class="sectionName">
+                <span>EDUCATION</span>
+            </div>
+            <div class="sectionContent">
+                <div class="educationBlock">
+                    <span class="title">"Fullstack Web Development" - IT Informal School, Cluj-Napoca</span>
+                    <span class="date">2016 - 2017</span> <br>
+                    <div class="qualification">"Junior fullstack web-developer"</div>
+
+
+                    <span class="title">"Communication and PR" - SNSPA David Ogilvy, Bucharest</span>
+                    <span class="date">2005 - 2009</span>
+                    <div class="qualification">Batchelor of Communication Sciences</div>
+
+
+                    <span class="title">"Industrial Robots" - Electro-mechanics, University of Craiova</span>
+                    <span class="date">2004 - 2006</span>
+                    <div class="qualification">The study of materials </div>
+
+
+
+                  <span class="title">"Electricity" - Energetic Highschool, Craiova</span>
+                    <span class="date">2000 - 2004</span>
+                    <div class="qualification">"Electricity specialist" - Energetic Highschool, Craiova</div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /#education -->
+
+        <div class="sectionLine"></div>
+
+        <div id="skills">
+            <div class="sectionName">
+                <span>SKILLS</span>
+            </div>
+            <div class="sectionContent">
+                <div class="skillBlock">
+                    <span class="title">Programming Languages (*junior fullstack):</span>
+                    <span>PHP, JavaScript, MySQL, HTML5, CSS3, XML, Python</span>
+                </div>
+                <div class="skillBlock">
+                    <span class="title">Networking:</span>
+                    <span>Installing, configuring and troubleshooting of networking equipments, VoIP, TCP/IP protocol suite, LAN, DNS, MX, SSH, MOSH, FTP, VPN configuration.</span>
+                </div>
+                <div class="skillBlock">
+                    <span class="title">Use of Web Technology:</span>
+                    <span>WAMP/LAMP, Apache, DigitalOcean/ScaleWay, Git</span>
+                </div>
+                <div class="skillBlock">
+                    <span class="title">Operating System:</span>
+                    <span>MacOS, iOS, Linux distros (debian based: UBUNTU, Raspbian, Kali), VirtualBox</span>
+                </div>
+            </div>
+        </div>
+        <!-- /#skills -->
+
+        <div class="sectionLine"></div>
+
+        <div id="languages">
+            <div class="sectionName">
+                <span>LANGUAGES</span>
+            </div>
+            <div class="sectionContent">
+                <div class="skillBlock">
+                    Romanian
+                    <em>(Native proficiency)</em>
+                </div>
+                <div class="skillBlock">
+                    English
+                    <em>(Full professional proficiency)</em>
+                </div>
+                <div class="skillBlock">
+                    Swedish
+                    <em>(Limited working poficiency)</em>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sectionLine"></div>
+
+        <div id="interests">
+            <div class="sectionName">
+                <span>INTERESTS</span>
+            </div>
+            <div class="sectionContent">
+				Agile metodology &bull;
+                Modern Computer Programming &bull; Software Design and Engineering &bull; Web Application Development &bull; White Hat (computer security)  &bull; Network and Security &bull; Internet of Things (IoT) &bull; Data Management  &bull; UI/UX &bull; Automation &bull; Open Source Software &bull; Visual Arts &bull; Outdoor Sports &bull; Photography &bull; Electric guitar &bull; Biking & driving &bull; Science &bull; History &bull; Teaching & training delivery
+            </div>
+        </div>
+        <!-- /#interests -->
+
+        <div class="sectionLine"></div>
+
+        <div id="references">
+            <div class="sectionName">
+                <span>REFERENCES</span>
+            </div>
+            <div class="sectionContent">
+                Available upon request. <a href="mailto:alinmechenici@protonmail.com"> Email me </a>.
+            </div>
+        </div>
+        <!-- /#references -->
+
+        <div class="colophon">
+            <div class="colophon-mark"></div>
+            <strong>Last update:</strong> 31 May 2017
+            <br>
+            <strong>Note:</strong> This page is updated more often than my <a href="https://linkedin.com/in/alinmechenici">LinkedIn</a> or <a href="https://angel.co/alinmechenici"> angelList </a> profile. This template also is print-friendly and PDF-optimized. Source code of my public projects<a href="https://github.com/alinmechenici"> here:</a>. You can <a href='mailto:alin@mechenici.ro'>ask</a> for a private <a href="https://gitlab.com/alinmechenici/showcase"> showcase</a> 
+            
+            
+        </div>
+
+
+    </div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-58296043-12', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
