@@ -37,7 +37,7 @@ google_analytics: 92364351
 
 # Your website URL (e.g. http://highwaytobusiness.github.io/alin.mechenici.com or http://alin.mechenici.com)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: ""
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://highwaytobusiness.github.io/alin.mechenici.com)
