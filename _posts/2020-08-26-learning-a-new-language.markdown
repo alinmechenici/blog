@@ -1,6 +1,6 @@
 ---
 title: Learning a new language with Audacity and emacs
-date: 2020-08-26 13:00:00 +02:00
+date: 2020-08-26 13:40:00 +02:00
 ---
 
 ![Learning Swedish using Audacity and 8sidor.se](https://i.imgur.com/38Y3yM9.jpg)
@@ -20,13 +20,18 @@ For this, I am using sdcv-mode.el from Elpa. I made the keybinds "C-c s" to tran
 ![Emacs](/images/screenshot-2020-08-26T131432.png)
 
 (use-package define-word
-  :ensure t
-  :bind (("C-c e" . define-word-at-point)
-         ("C-c E" . define-word)))
 
-(load-file "~/.emacs.d/custom/sdcv-mode.el")
-(global-set-key (kbd "C-c s") 'sdcv-search)
-(global-set-key (kbd "C-c S") 'sdcv-search-input)
+  :ensure t
+
+    :bind (("C-c e" . define-word-at-point)
+
+    ("C-c E" . define-word)))
+
+ (load-file "~/.emacs.d/custom/sdcv-mode.el")
+
+ (global-set-key (kbd "C-c s") 'sdcv-search)
+
+ (global-set-key (kbd "C-c S") 'sdcv-search-input)
 
 
 This article will remain a work in progress. So, I will keep you updated here with my learning status, you should do the same in return. :)
