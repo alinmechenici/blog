@@ -1,6 +1,6 @@
 ---
 title: Learning a new language with Audacity and emacs
-date: 2017-02-17 14:00:00 +02:00
+date: 2020-08-26 13:00:00 +02:00
 ---
 
 ![Learning Swedish using Audacity and 8sidor.se](https://i.imgur.com/38Y3yM9.jpg)
